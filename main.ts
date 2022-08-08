@@ -1,3 +1,10 @@
+basic.showLeds(`
+    # . . . #
+    . # . # .
+    . . # . .
+    . # . # .
+    # . . . #
+    `)
 probots.initColorSensor(probots.conexiones_ret(conn.CON3))
 basic.forever(function () {
     if (probots.getSensedColorValue() == probots.colors_ret(Names_colors.Red)) {
