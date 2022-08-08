@@ -6,7 +6,7 @@ basic.showLeds(`
     # . . . #
     `)
 probots.initColorSensor(probots.conexiones_ret(conn.CON3))
-basic.forever(function () {
+while (true) {
     if (probots.getSensedColorValue() == probots.colors_ret(Names_colors.Red)) {
         basic.showIcon(IconNames.Heart)
     } else if (probots.getSensedColorValue() == probots.colors_ret(Names_colors.Green)) {
@@ -22,4 +22,4 @@ basic.forever(function () {
             . . . . .
             `)
     }
-})
+}
